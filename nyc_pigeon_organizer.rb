@@ -2,7 +2,7 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   # write your code here!
-  hash = {}
+   = {}
   
   data.each do |key, value|
     data[key].each do |key1, value1|
