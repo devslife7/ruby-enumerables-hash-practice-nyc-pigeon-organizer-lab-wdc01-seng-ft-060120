@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
   
   pigeon_list.each do |names, attributes|
     data.each do |key, value|
-      data[key].each do |key2, value2|
+      value.each do |key2, value2|
         data[key][key2].each do |element|
           if names == element
             pigeon_list[names][key].push(key2.to_s)
