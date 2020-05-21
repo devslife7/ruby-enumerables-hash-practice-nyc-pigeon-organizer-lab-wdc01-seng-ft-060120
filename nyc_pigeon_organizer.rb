@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
   end
   
   pigeon_list.each do |key, value|
-    data.each do |inner_key|
+    data.each do |inner_key, value1|
         pigeon_list[key][inner_key] = []
     end
   end
