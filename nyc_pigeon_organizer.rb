@@ -2,33 +2,33 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   # write your code here!
-   = {}
+  pigeon_list = {}
   
   data.each do |key, value|
     data[key].each do |key1, value1|
       data[key][key1].each do |element|
-        hash[element] = {}
+        pigeon_list[element] = {}
       end
     end
   end
   
-  hash.each do |key, value|
+  pigeon_list.each do |key, value|
     data.each do |key1, value1|
-        hash[key][key1] = []
+        pigeon_list[key][key1] = []
     end
   end
   
-  hash.each do |key, value|
+  pigeon_list.each do |key, value|
     data.each do |key1, value1|
       data[key1].each do |key2, value2|
         data[key1][key2].each do |element|
           if key == element
-            hash[key][key1].push(key2.to_s)
+            pigeon_list[key][key1].push(key2.to_s)
           end
         end
       end
     end
   end
   
-  hash
+  pigeon_list
 end
